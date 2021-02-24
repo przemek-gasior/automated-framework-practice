@@ -1,0 +1,10 @@
+C:\Users\przem\source\repos\XUnitTestProject1\SeleniumTestFramework\bin\Debug\netcoreapp3.1\SeleniumTestFramework.deps.json
+C:\Users\przem\source\repos\XUnitTestProject1\SeleniumTestFramework\bin\Debug\netcoreapp3.1\SeleniumTestFramework.dll
+C:\Users\przem\source\repos\XUnitTestProject1\SeleniumTestFramework\bin\Debug\netcoreapp3.1\SeleniumTestFramework.pdb
+C:\Users\przem\source\repos\XUnitTestProject1\SeleniumTestFramework\obj\Debug\netcoreapp3.1\SeleniumTestFramework.AssemblyInfoInputs.cache
+C:\Users\przem\source\repos\XUnitTestProject1\SeleniumTestFramework\obj\Debug\netcoreapp3.1\SeleniumTestFramework.AssemblyInfo.cs
+C:\Users\przem\source\repos\XUnitTestProject1\SeleniumTestFramework\obj\Debug\netcoreapp3.1\SeleniumTestFramework.csproj.CoreCompileInputs.cache
+C:\Users\przem\source\repos\XUnitTestProject1\SeleniumTestFramework\obj\Debug\netcoreapp3.1\SeleniumTestFramework.dll
+C:\Users\przem\source\repos\XUnitTestProject1\SeleniumTestFramework\obj\Debug\netcoreapp3.1\SeleniumTestFramework.pdb
+C:\Users\przem\source\repos\XUnitTestProject1\SeleniumTestFramework\bin\Debug\netcoreapp3.1\chromedriver.exe
+C:\Users\przem\source\repos\XUnitTestProject1\SeleniumTestFramework\obj\Debug\netcoreapp3.1\SeleniumTestFramework.csprojAssemblyReference.cache

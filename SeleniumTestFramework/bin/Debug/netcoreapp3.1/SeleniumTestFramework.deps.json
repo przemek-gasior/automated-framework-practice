@@ -8,11 +8,23 @@
     ".NETCoreApp,Version=v3.1": {
       "SeleniumTestFramework/1.0.0": {
         "dependencies": {
+          "DotNetSeleniumExtras.WaitHelpers": "3.11.0",
           "Selenium.WebDriver": "3.141.0",
-          "Selenium.WebDriver.ChromeDriver": "88.0.4324.9600"
+          "Selenium.WebDriver.ChromeDriver": "91.0.4472.10100"
         },
         "runtime": {
           "SeleniumTestFramework.dll": {}
+        }
+      },
+      "DotNetSeleniumExtras.WaitHelpers/3.11.0": {
+        "dependencies": {
+          "Selenium.WebDriver": "3.141.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SeleniumExtras.WaitHelpers.dll": {
+            "assemblyVersion": "3.11.0.0",
+            "fileVersion": "3.11.0.0"
+          }
         }
       },
       "Microsoft.CSharp/4.3.0": {
@@ -167,7 +179,7 @@
           }
         }
       },
-      "Selenium.WebDriver.ChromeDriver/88.0.4324.9600": {},
+      "Selenium.WebDriver.ChromeDriver/91.0.4472.10100": {},
       "System.AppContext/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -836,6 +848,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "DotNetSeleniumExtras.WaitHelpers/3.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xc6jVVl5ymgk3ZNWnC/KHxkEup1QpnwYbrwF+NQoCOGERsD8YMlLwmsX4lGhLXCLo/YQTRTIwlKCN9E/doGUNg==",
+      "path": "dotnetseleniumextras.waithelpers/3.11.0",
+      "hashPath": "dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512"
+    },
     "Microsoft.CSharp/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -997,12 +1016,12 @@
       "path": "selenium.webdriver/3.141.0",
       "hashPath": "selenium.webdriver.3.141.0.nupkg.sha512"
     },
-    "Selenium.WebDriver.ChromeDriver/88.0.4324.9600": {
+    "Selenium.WebDriver.ChromeDriver/91.0.4472.10100": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tFYi/cACBE+lq+aQMMCFDCZChkq7jQHm3yNh040r2WeuI+WBg3MDna9o+8x6d+inxdbCXDABnifqKb4CynRQLQ==",
-      "path": "selenium.webdriver.chromedriver/88.0.4324.9600",
-      "hashPath": "selenium.webdriver.chromedriver.88.0.4324.9600.nupkg.sha512"
+      "sha512": "sha512-RalhItuJ6BZdD9HHVUHdpgDP/NQAUrr1yEAHWet+Ww33wbcuei0A2sF4+9duKaLQuZO3lcid7pKe2+km3sOGBQ==",
+      "path": "selenium.webdriver.chromedriver/91.0.4472.10100",
+      "hashPath": "selenium.webdriver.chromedriver.91.0.4472.10100.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",

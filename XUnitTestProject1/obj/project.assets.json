@@ -8,6 +8,18 @@
           "build/netstandard1.0/coverlet.collector.targets": {}
         }
       },
+      "DotNetSeleniumExtras.WaitHelpers/3.11.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "3.10.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SeleniumExtras.WaitHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SeleniumExtras.WaitHelpers.dll": {}
+        }
+      },
       "Microsoft.CodeCoverage/16.7.1": {
         "type": "package",
         "compile": {
@@ -760,7 +772,7 @@
           "lib/netstandard2.0/WebDriver.dll": {}
         }
       },
-      "Selenium.WebDriver.ChromeDriver/88.0.4324.9600": {
+      "Selenium.WebDriver.ChromeDriver/91.0.4472.10100": {
         "type": "package",
         "build": {
           "build/_._": {}
@@ -1932,7 +1944,7 @@
           "buildMultiTargeting/xunit.core.targets": {}
         }
       },
-      "Xunit.DependencyInjection/7.1.0": {
+      "Xunit.DependencyInjection/7.3.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Hosting": "2.1.0",
@@ -1987,8 +1999,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "DotNetSeleniumExtras.WaitHelpers": "3.11.0",
           "Selenium.WebDriver": "3.141.0",
-          "Selenium.WebDriver.ChromeDriver": "88.0.4324.9600"
+          "Selenium.WebDriver.ChromeDriver": "91.0.4472.10100"
         },
         "compile": {
           "bin/placeholder/SeleniumTestFramework.dll": {}
@@ -2030,6 +2043,21 @@
         "coverlet-icon.png",
         "coverlet.collector.1.3.0.nupkg.sha512",
         "coverlet.collector.nuspec"
+      ]
+    },
+    "DotNetSeleniumExtras.WaitHelpers/3.11.0": {
+      "sha512": "xc6jVVl5ymgk3ZNWnC/KHxkEup1QpnwYbrwF+NQoCOGERsD8YMlLwmsX4lGhLXCLo/YQTRTIwlKCN9E/doGUNg==",
+      "type": "package",
+      "path": "dotnetseleniumextras.waithelpers/3.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
+        "dotnetseleniumextras.waithelpers.nuspec",
+        "lib/net35/SeleniumExtras.WaitHelpers.dll",
+        "lib/net40/SeleniumExtras.WaitHelpers.dll",
+        "lib/net45/SeleniumExtras.WaitHelpers.dll",
+        "lib/netstandard2.0/SeleniumExtras.WaitHelpers.dll"
       ]
     },
     "Microsoft.CodeCoverage/16.7.1": {
@@ -2939,20 +2967,21 @@
         "selenium.webdriver.nuspec"
       ]
     },
-    "Selenium.WebDriver.ChromeDriver/88.0.4324.9600": {
-      "sha512": "tFYi/cACBE+lq+aQMMCFDCZChkq7jQHm3yNh040r2WeuI+WBg3MDna9o+8x6d+inxdbCXDABnifqKb4CynRQLQ==",
+    "Selenium.WebDriver.ChromeDriver/91.0.4472.10100": {
+      "sha512": "RalhItuJ6BZdD9HHVUHdpgDP/NQAUrr1yEAHWet+Ww33wbcuei0A2sF4+9duKaLQuZO3lcid7pKe2+km3sOGBQ==",
       "type": "package",
-      "path": "selenium.webdriver.chromedriver/88.0.4324.9600",
+      "path": "selenium.webdriver.chromedriver/91.0.4472.10100",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "README.md",
         "build/DefinePropertiesChromeDriver.targets",
         "build/Selenium.WebDriver.ChromeDriver.targets",
         "driver/linux64/chromedriver",
         "driver/mac64/chromedriver",
         "driver/win32/chromedriver.exe",
         "nupkg-icon.png",
-        "selenium.webdriver.chromedriver.88.0.4324.9600.nupkg.sha512",
+        "selenium.webdriver.chromedriver.91.0.4472.10100.nupkg.sha512",
         "selenium.webdriver.chromedriver.nuspec"
       ]
     },
@@ -6498,13 +6527,18 @@
         "xunit.core.nuspec"
       ]
     },
-    "Xunit.DependencyInjection/7.1.0": {
-      "sha512": "OOwMcN1GpSJ1whikH71g0J2BkHrO+VddFOz/y35kZbUMIJG7cyBFy+I0tgLWTcMcnkWipXOiv1Tvw25SPxfjew==",
+    "Xunit.DependencyInjection/7.3.0": {
+      "sha512": "9xkOdhMqUeEAU7q6kbSM2GywF24AbvGRxNA1lu63YrMBRrBI8/o9UMKLmDz4QMd9IyNImozZ8oPD3yiQTSWNhQ==",
       "type": "package",
-      "path": "xunit.dependencyinjection/7.1.0",
+      "path": "xunit.dependencyinjection/7.3.0",
+      "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "analyzers/dotnet/cs/Xunit.DependencyInjection.Analyzer.deps.json",
+        "analyzers/dotnet/cs/Xunit.DependencyInjection.Analyzer.dll",
+        "analyzers/dotnet/cs/Xunit.DependencyInjection.Analyzer.pdb",
+        "analyzers/dotnet/cs/Xunit.DependencyInjection.Analyzer.xml",
         "build/net461/Xunit.DependencyInjection.targets",
         "build/netstandard2.0/Xunit.DependencyInjection.targets",
         "buildMultiTargeting/Xunit.DependencyInjection.targets",
@@ -6516,7 +6550,9 @@
         "lib/netstandard2.0/Xunit.DependencyInjection.dll",
         "lib/netstandard2.0/Xunit.DependencyInjection.pdb",
         "lib/netstandard2.0/Xunit.DependencyInjection.xml",
-        "xunit.dependencyinjection.7.1.0.nupkg.sha512",
+        "tools/install.ps1",
+        "tools/uninstall.ps1",
+        "xunit.dependencyinjection.7.3.0.nupkg.sha512",
         "xunit.dependencyinjection.nuspec"
       ]
     },
@@ -6595,7 +6631,7 @@
       "Microsoft.Extensions.DependencyInjection >= 5.0.1",
       "Microsoft.NET.Test.Sdk >= 16.7.1",
       "SeleniumTestFramework >= 1.0.0",
-      "Xunit.DependencyInjection >= 7.1.0",
+      "Xunit.DependencyInjection >= 7.3.0",
       "coverlet.collector >= 1.3.0",
       "xunit >= 2.4.1",
       "xunit.runner.visualstudio >= 2.4.3"
@@ -6654,7 +6690,7 @@
           },
           "Xunit.DependencyInjection": {
             "target": "Package",
-            "version": "[7.1.0, )"
+            "version": "[7.3.0, )"
           },
           "coverlet.collector": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -6688,7 +6724,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

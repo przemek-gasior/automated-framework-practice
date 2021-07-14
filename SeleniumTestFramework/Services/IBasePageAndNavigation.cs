@@ -9,5 +9,8 @@ namespace SeleniumTestFramework.Services
         bool CheckForLogoutButton();
         void ClickOnLoginRegisterButton();
         void GoTo();
+        void HoverOverListItemAndPickFromList();
+        void GoToCart();
+
     }
 }

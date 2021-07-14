@@ -13,6 +13,8 @@ namespace XUnitTestProject1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<IRegistrationAndLogin, RegistrationAndLogin>();
+            services.AddTransient<ISearchPage, SearchPage>();
+            services.AddTransient<ICartPage, CartPage>();
             services.AddTransient<IBasePageAndNavigation, BasePageAndNavigation>();
             services.AddSingleton<ISetup, Setup>();
         }
